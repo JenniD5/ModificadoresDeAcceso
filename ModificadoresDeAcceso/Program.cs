@@ -27,7 +27,22 @@ namespace ModificadoresDeAcceso
             {
                 Console.WriteLine("la curp debe ser de 18 caracteres");
             }
-           
+
+            Cuenta cuenta
+                = new Cuenta();
+         // cuenta. Propietario= 
+
+            try
+            {
+                cuenta.Identificador = "12346";
+                Console.WriteLine("identificador:" + cuenta.Identificador);
+            }
+            catch (Exception a)
+            {
+                Console.WriteLine("el identificador no es el correcto");
+            }
+
+
             Console.Read();
         }
     }

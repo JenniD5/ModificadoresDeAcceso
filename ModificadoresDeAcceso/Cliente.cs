@@ -21,19 +21,17 @@ namespace ModificadoresDeAcceso
             }
             set
             {
-                if (value.Length==18)
+                if (value.Length == 18)
                 {
                     _curp = value;
-                } else
+                }
+                else
                 {
                     throw new Exception("no es de 18 caracteres");
                 }
-                
+
             }
         }
-
-
-
 
     }
 }
